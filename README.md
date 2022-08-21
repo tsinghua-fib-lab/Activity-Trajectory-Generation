@@ -1,2 +1,4 @@
-# Activity-Trajectory-Generation
-The official implementation of "Activity Trajectory Generation via Modeling Spatiotemporal Dynamics"
+# test
+
+## Dependency
+Check python packages listed in the requirements.txt file.
