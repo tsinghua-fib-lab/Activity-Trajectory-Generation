@@ -4,6 +4,8 @@ The official implementation of:  [Activity Trajectory Generation via Modeling Sp
 
 # Requirements
 - Python 3.7
+
 Dependencies can be installed using the following command:
+
 `python install -r requirements.txt.`
 
