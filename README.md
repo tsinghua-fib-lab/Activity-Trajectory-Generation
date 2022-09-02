@@ -1,6 +1,6 @@
 # ActSTD
 
-The official implementation of:  [Activity Trajectory Generation via Modeling Spatiotemporal Dynamics (KDD '22)](https://dl.acm.org/doi/abs/10.1145/3534678.3542671)
+The official implementation of:  [Activity Trajectory Generation via Modeling Spatiotemporal Dynamics (KDD '22)](https://dl.acm.org/doi/abs/10.1145/3534678.3542671).
 
 ## Requirements
 - Python 3.7
