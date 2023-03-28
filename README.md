@@ -2,12 +2,35 @@
 
 The official implementation of:  [Activity Trajectory Generation via Modeling Spatiotemporal Dynamics (KDD '22)](https://dl.acm.org/doi/abs/10.1145/3534678.3542671).
 
-## Requirements
-- Python 3.7
+## Installation
 
-Dependencies can be installed using the following command:
+### Environment
+- Tested OS: Linux
+- Python >= 3.7
+- PyTorch == 1.7.1
 
-`python install -r requirements.txt`
+### Dependencies
+1. Install PyTorch 1.7.1 with the correct CUDA version.
+2. Use the ``pip install -r requirements. txt`` command to install all of the Python modules and packages used in this project.
+
+run `python src/setup.py build_ext --inplace` to create the shared object file in the current directory.
+
+
+## Model Training
+`cd src`
+
+Use the following command to train ActSTD on `Mobile` dataset with different CNF models: 
+
+`python app.py --data Mobile --model attncnf --tpp neural  --l2_attn --ode_method 'scipy_solver' --ode_solver 'RK45' --cuda_id 0 --tpp_style 'gru'  --weekhour`
+
+`python app.py --data Mobile --model jumpcnf --tpp neural --solve_reverse --ode_method 'scipy_solver' --ode_solver 'RK45' --cuda_id 0 --tpp_style 'gru' --weekhour`
+
+Use the following command to train ActSTD on `Foursquare` dataset with different CNF models: 
+
+`python app.py --data Foursquare --model attncnf --tpp neural  --l2_attn --ode_method 'scipy_solver' --ode_solver 'RK45' --cuda_id 0 --tpp_style 'gru'  --weekhour`
+
+`python app.py --data Foursquare --model jumpcnf --tpp neural --solve_reverse --ode_method 'scipy_solver' --ode_solver 'RK45' --cuda_id 0 --tpp_style 'gru' --weekhour`
+
 
 ## Citation
 If you find this repository useful in your research, please consider citing the following paper:
