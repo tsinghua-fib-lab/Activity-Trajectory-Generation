@@ -31,6 +31,8 @@ Use the following command to train ActSTD on `Foursquare` dataset with different
 
 `python app.py --data Foursquare --model jumpcnf --tpp neural --solve_reverse --ode_method 'scipy_solver' --ode_solver 'RK45' --cuda_id 0 --tpp_style 'gru' --weekhour`
 
+## More Related Works
+- [Learning to Simulate Daily Activities via Modeling Dynamic Human Needs (WWW'23)](https://github.com/tsinghua-fib-lab/Activity-Simulation-SAND)
 
 ## Citation
 If you find this repository useful in your research, please consider citing the following paper:
